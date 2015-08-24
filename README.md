@@ -1,4 +1,4 @@
-# Longdo Map SDK for iOD
+# Longdo Map SDK for iOS
 This project contain the library to download for Longdo Map SDK for iOS.
 
 Download all the files and add to your project to start develop application with the SDK.
