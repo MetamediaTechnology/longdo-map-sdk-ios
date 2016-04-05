@@ -7,6 +7,9 @@ You can follow the tutorial on how to use Longdo Map SDK for iOS from the link o
 
 https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
+## Demo and Tutorial
+https://github.com/MetamediaTechnology/longdo-map-demo-ios
+
 ## Change log
 
 ### Version 2.0.1
