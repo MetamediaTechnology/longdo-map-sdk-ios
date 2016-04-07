@@ -12,6 +12,9 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 2.1
+* Full support iOS9 / All data send from ssl
+
 ### Version 2.0.1
 * Tiles will resume download after go online immediately
 
