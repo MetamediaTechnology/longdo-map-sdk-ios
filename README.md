@@ -12,6 +12,12 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.0
+* Support Swift 3
+* Search and suggest feature from Longdo Map
+* Based on Apple Mapkit framework
+* Drop support from iOS 7 and earlier
+
 ### Version 2.1
 * Full support iOS9 / All data send from ssl
 
