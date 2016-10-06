@@ -32,3 +32,8 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ### Version 0.0.0
 * Experimental release
+
+## Copyright and license
+  * Metamedia Technology © 2005 - now. All Rights Reserved.
+  * SDK are released under the [Apache 2.0 license](LICENSE).
+  * [Terms of Use](https://map.longdo.com/terms)
