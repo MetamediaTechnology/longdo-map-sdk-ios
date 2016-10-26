@@ -12,7 +12,11 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
-### Version 3.0
+### Version 3.0 beta 2
+* Developer can add their custom layer from url
+* Fix support for 32 bit device
+
+### Version 3.0 beta 1
 * Support Swift 3
 * Search and suggest feature from Longdo Map
 * Based on Apple Mapkit framework
