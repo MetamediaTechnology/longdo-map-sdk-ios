@@ -12,6 +12,10 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.0
+* Refractor to shorter name
+* Include coordinate parameter to search method
+
 ### Version 3.0 beta 2
 * Developer can add their custom layer from url
 * Fix support for 32 bit device
