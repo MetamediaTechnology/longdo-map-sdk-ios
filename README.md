@@ -12,6 +12,10 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.0.1
+* Premium apikey can use more than 5GB of data
+* Fix cache for map tile images
+
 ### Version 3.0
 * Refractor to shorter name
 * Include coordinate parameter to search method
