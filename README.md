@@ -12,6 +12,9 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.0.2
+* Add blank layer
+
 ### Version 3.0.1
 * Premium apikey can use more than 5GB of data
 * Fix cache for map tile images
