@@ -12,6 +12,13 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.2
+* Can use custom layer with bounding box parameter
+
+### Version 3.1
+* Add upside down layer for normal layer
+* Offline layer support (contact sales@mm.co.th for resource files.)
+
 ### Version 3.0.2
 * Add blank layer
 
