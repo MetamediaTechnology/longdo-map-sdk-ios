@@ -12,6 +12,9 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.2.1
+* Can use custom layer with TMS format
+
 ### Version 3.2
 * Can use custom layer with bounding box parameter
 
