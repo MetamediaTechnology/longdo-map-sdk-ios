@@ -12,6 +12,9 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.3
+* Can get data from url with parameters from current map tile number and map zoom
+
 ### Version 3.2.1
 * Can use custom layer with TMS format
 

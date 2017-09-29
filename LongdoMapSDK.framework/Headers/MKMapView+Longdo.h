@@ -23,6 +23,12 @@
 
 @end
 
+@protocol LMTileDataDelegate <NSObject>
+
+- (void)dataFromTile:(NSData *)data;
+
+@end
+
 /*!
  @enum LMMode
  
@@ -118,22 +124,26 @@ typedef NS_ENUM(NSInteger, LMLanguage) {
     LMTileFormat tileFormat;
     NSString *modeName;
     NSString *urlLayer;
+    NSString *urlForData;
 }
 
 @property (nonatomic, assign) LMMode mode;
+@property (nonatomic, assign) id <LMTileDataDelegate> dataDelegate;
 
 - (id)initWithMode:(LMMode)mode withKey:(NSString *)key andLanguage:(LMLanguage)lang;
 - (void)setCustomUrl:(NSString *)urlString;
 - (void)setTileFormat:(LMTileFormat)format;
+- (void)loadDataFromURL:(NSString *)urlString;
 
 @end
 
-@interface LongdoMapView : MKMapView <LMTagDelegate, MKMapViewDelegate> {
+@interface LongdoMapView : MKMapView <LMTagDelegate, LMTileDataDelegate, MKMapViewDelegate> {
     LMTileOverlayRenderer *tagOverlay;
     NSString *apikey;
 }
 
 @property (nonatomic, assign) id <LMSearchDelegate> searchDelegate;
+@property (nonatomic, assign) id <LMTileDataDelegate> dataDelegate;
 @property (nonatomic, assign) LMLanguage language;
 
 /**
@@ -190,6 +200,12 @@ typedef NS_ENUM(NSInteger, LMLanguage) {
  Remove longdo tags from the map.
  */
 - (void)removeAllTags;
+
+/**
+ Fetch data from url specific by map area.
+ @param urlString url for fetch data.
+ */
+- (void)loadDataFromURL:(NSString *)urlString;
 
 /**
  Search with Longdo map poi
