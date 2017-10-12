@@ -203,7 +203,7 @@ typedef NS_ENUM(NSInteger, LMLanguage) {
 
 /**
  Fetch data from url specific by map area.
- @param urlString url for fetch data.
+ @param urlString url for fetch data. (replace u,v,zoom position and zoom with {u}, {v}, {z})
  */
 - (void)loadDataFromURL:(NSString *)urlString;
 
