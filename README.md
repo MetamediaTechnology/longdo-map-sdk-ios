@@ -12,6 +12,9 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.3.1
+* Fix offline map in zoom more than 12
+
 ### Version 3.3
 * Can get data from url with parameters from current map tile number and map zoom
 
