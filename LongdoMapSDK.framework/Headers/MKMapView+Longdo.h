@@ -87,11 +87,16 @@ typedef NS_ENUM(NSInteger, LMMode) {
 can be used to specify the type of custom map tile format.
 */
 typedef NS_ENUM(NSInteger, LMTileFormat) {
-    ///Web Map Service Format
+    ///If not use custom format
+    LONGDO,
+    ///Web Map Service format
     WMS,
-    ///Tile Map Service Format
+    WMTS = WMS,
+    ///Tile Map Service format
     TMS,
-    ///Bounding Box Format
+    ///JSON of point format
+    JSON,
+    ///Bounding box format
     BBOX
 };
 
@@ -104,6 +109,17 @@ typedef NS_ENUM(NSInteger, LMTileFormat) {
 typedef NS_ENUM(NSInteger, LMLanguage) {
     THAI,
     ENGLISH
+};
+
+/*!
+ @enum LMCache
+ 
+ @discussion The LMCache enum defines how map tile cache in device.
+ */
+typedef NS_ENUM(NSInteger, LMCache) {
+    DEFAULTCACHE,
+    ALWAYCACHE,
+    ALWAYLOAD
 };
 
 @interface LMTileOverlayRenderer : MKTileOverlayRenderer {
@@ -121,25 +137,28 @@ typedef NS_ENUM(NSInteger, LMLanguage) {
 @interface LMTileOverlay : MKTileOverlay {
     NSString *apikey;
     LMLanguage language;
-    LMTileFormat tileFormat;
-    NSString *modeName;
-    NSString *urlLayer;
-    NSString *urlForData;
+    NSString *docDir;
+    NSFileManager *fileManager;
+    NSUserDefaults *defaults;
+    NSMutableArray *tileList;
 }
 
-@property (nonatomic, assign) LMMode mode;
+@property (nonatomic, assign) LMCache cache;
+@property (nonatomic, strong) NSMutableArray<NSNumber *> *mode;
+@property (nonatomic, strong) NSMutableArray<NSNumber *> *tileFormat;
+@property (nonatomic, strong) NSMutableArray<NSString *> *urlLayer;
 @property (nonatomic, assign) id <LMTileDataDelegate> dataDelegate;
+@property (nonatomic, strong) NSMutableArray<NSString *> *referer;
 
-- (id)initWithMode:(LMMode)mode withKey:(NSString *)key andLanguage:(LMLanguage)lang;
-- (void)setCustomUrl:(NSString *)urlString;
-- (void)setTileFormat:(LMTileFormat)format;
-- (void)loadDataFromURL:(NSString *)urlString;
+- (id)initWithMode:(NSArray<NSNumber *> *)mapMode withKey:(NSString *)key andLanguage:(LMLanguage)lang;
+- (void)setCustomUrl:(NSArray<NSString *> *)urlString withTileFormat:(NSArray<NSNumber *> *)format andReferer:(NSArray<NSString *> *)refer;
 
 @end
 
 @interface LongdoMapView : MKMapView <LMTagDelegate, LMTileDataDelegate, MKMapViewDelegate> {
     LMTileOverlayRenderer *tagOverlay;
     NSString *apikey;
+    LMCache cache;
 }
 
 @property (nonatomic, assign) id <LMSearchDelegate> searchDelegate;
@@ -151,6 +170,12 @@ typedef NS_ENUM(NSInteger, LMLanguage) {
  @param key Longdo Map API Key.
  */
 - (void)setKey:(NSString *)key;
+
+/**
+Enable cache for map.
+ @param cached set how to cache.
+ */
+- (void)setCache:(LMCache)cached;
 
 /**
  Get map current zoom.
@@ -181,12 +206,22 @@ typedef NS_ENUM(NSInteger, LMLanguage) {
  Add custom overlay layer to map view.
  @param urlString URL of layer to be added. (replace x,y position and zoom with {x}, {y}, {z} or bounding box with {w}, {s}, {e}, {n})
  @param tileFormat Tile format type.
+ @param refer Tile referer (if no referer, send empty string).
  */
-- (void)addCustomOverlayWithURL:(NSString *)urlString andFormat:(LMTileFormat)tileFormat;
+- (void)addCustomOverlayWithURL:(NSString *)urlString andFormat:(LMTileFormat)tileFormat withReferer:(NSString *)refer;
+
+/**
+ Add overlay layers to map view.
+ @param overlayNames set of overlay layer to be added.
+ @param urlStrings set of URL of layer to be added. (replace x,y position and zoom with {x}, {y}, {z} or bounding box with {w}, {s}, {e}, {n})
+ @param tileFormats Tile set of format type.
+ @param refer Tile referer set (if no referer, send empty string).
+ */
+- (void)addLMOverlays:(NSArray<NSNumber *>*)overlayNames WithURL:(NSArray<NSString *>*)urlStrings andFormat:(NSArray<NSNumber *>*)tileFormats withReferer:(NSArray<NSString *>*)refer;
 
 /**
  Remove overlay layer from map view.
- @param overlayName overlay layer to be removed.
+ @param overlayName overlay layer that include in overlay to be removed.
  */
 - (void)removeLMOverlay:(LMMode)overlayName;
 
@@ -202,10 +237,22 @@ typedef NS_ENUM(NSInteger, LMLanguage) {
 - (void)removeAllTags;
 
 /**
- Fetch data from url specific by map area.
- @param urlString url for fetch data. (replace u,v,zoom position and zoom with {u}, {v}, {z})
+ Remove map tile caches from device.
  */
-- (void)loadDataFromURL:(NSString *)urlString;
+- (BOOL)clearAllCaches;
+
+/**
+ Convert WGS 84 value to UTM value.
+ @param coordinate value in WGS 84 format.
+ @param hasZone show UTM zone in return value.
+ */
+- (NSString *)UTMFrom:(CLLocationCoordinate2D)coordinate withZone:(BOOL)hasZone;
+
+/**
+ Convert UTM value to WGS 84 value.
+ @param utmString value in UTM format.
+ */
+- (CLLocationCoordinate2D)coordinateFromUTM:(NSString *)utmString;
 
 /**
  Search with Longdo map poi
