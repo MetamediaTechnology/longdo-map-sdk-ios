@@ -12,6 +12,13 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.5
+* fix use custom bounding box tiles in map
+
+### Version 3.4
+* Add function covert from LatLon to UTM
+* Can show multiple layers
+
 ### Version 3.3.1
 * Fix offline map in zoom more than 12
 
