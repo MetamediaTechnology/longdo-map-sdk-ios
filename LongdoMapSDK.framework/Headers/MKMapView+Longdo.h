@@ -96,8 +96,9 @@ typedef NS_ENUM(NSInteger, LMTileFormat) {
     TMS,
     ///JSON of point format
     JSON,
-    ///Bounding box format
-    BBOX
+    ///Bounding box format with specific SRS
+    BBOX4326,
+    BBOX3857
 };
 
 /*!
@@ -204,7 +205,7 @@ Enable cache for map.
 
 /**
  Add custom overlay layer to map view.
- @param urlString URL of layer to be added. (replace x,y position and zoom with {x}, {y}, {z} or bounding box with {w}, {s}, {e}, {n})
+ @param urlString URL of layer to be added. (if not using bounding box, replace x,y position and zoom with {x}, {y}, {z})
  @param tileFormat Tile format type.
  @param refer Tile referer (if no referer, send empty string).
  */
@@ -213,7 +214,7 @@ Enable cache for map.
 /**
  Add overlay layers to map view.
  @param overlayNames set of overlay layer to be added.
- @param urlStrings set of URL of layer to be added. (replace x,y position and zoom with {x}, {y}, {z} or bounding box with {w}, {s}, {e}, {n})
+ @param urlStrings set of URL of layer to be added. (if not using bounding box, replace x,y position and zoom with {x}, {y}, {z})
  @param tileFormats Tile set of format type.
  @param refer Tile referer set (if no referer, send empty string).
  */
