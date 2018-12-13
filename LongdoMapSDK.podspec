@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LongdoMapSDK"
-  s.version      = "3.5"
+  s.version      = "3.5.2"
   s.summary      = "Integrated map tiles from Longdo Map to iOS application."
 
   # This description is used to generate tags and improve search results.
@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = { :type => "Apache License, Version 2.0", :file => "LICENSE" }
+  s.license      = { :type => "Commercial", :file => "LICENSE.md" }
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
