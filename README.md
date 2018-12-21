@@ -12,6 +12,12 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.6
+* add show event data method
+* add show camera data method
+* fix search function for non ASCII keyword
+* add parameter span, offset, limit for search function
+
 ### Version 3.5
 * fix use custom bounding box tiles in map
 

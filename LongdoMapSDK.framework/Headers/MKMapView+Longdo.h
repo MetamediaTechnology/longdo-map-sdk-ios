@@ -18,7 +18,16 @@
 
 @protocol LMSearchDelegate <NSObject>
 
+/**
+ Callback from searchWithKeyword function
+ @param poi point of interest results from search keyword.
+ */
 - (void)searchData:(NSArray<LMPinAnnotation *> *)poi;
+
+/**
+ Callback from suggestWithKeyword function
+ @param keyword suggest name of point of interest results from search keyword.
+ */
 - (void)suggestData:(NSArray<NSString *> *)keyword;
 
 @end
@@ -131,7 +140,7 @@ typedef NS_ENUM(NSInteger, LMCache) {
 @property (nonatomic, strong) NSArray *tag;
 @property (nonatomic, assign) NSString *language;
 @property (nonatomic, strong) NSString *apikey;
-@property (nonatomic, assign) id <LMTagDelegate> delegate;
+@property (nonatomic, assign) id <LMTagDelegate> tagDelegate;
 
 @end
 
@@ -180,7 +189,7 @@ Enable cache for map.
 
 /**
  Get map current zoom.
- @return map current zoom.
+ @return Map current zoom.
  */
 - (CGFloat)getZoomLevel;
 
@@ -193,7 +202,7 @@ Enable cache for map.
 /**
  Get map span with specific zoom.
  @param zoomLevel the zoom of the map.
- @return span of the map with specific zoom.
+ @return Span of the map with specific zoom.
  */
 - (MKCoordinateSpan)coordinateSpanWithZoomLevel:(CGFloat)zoomLevel;
 
@@ -239,6 +248,7 @@ Enable cache for map.
 
 /**
  Remove map tile caches from device.
+ @return Clear cache success.
  */
 - (BOOL)clearAllCaches;
 
@@ -246,12 +256,14 @@ Enable cache for map.
  Convert WGS 84 value to UTM value.
  @param coordinate value in WGS 84 format.
  @param hasZone show UTM zone in return value.
+ @return Value in UTM format.
  */
 - (NSString *)UTMFrom:(CLLocationCoordinate2D)coordinate withZone:(BOOL)hasZone;
 
 /**
  Convert UTM value to WGS 84 value.
  @param utmString value in UTM format.
+ @return Value in WGS 84 format.
  */
 - (CLLocationCoordinate2D)coordinateFromUTM:(NSString *)utmString;
 
@@ -263,9 +275,39 @@ Enable cache for map.
 - (void)searchWithKeyword:(NSString *)keyword andCoordinate:(CLLocationCoordinate2D)location;
 
 /**
+ Search with Longdo map poi
+ @param keyword word to search with Longdo
+ @param location center of location to search with Longdo
+ @param span span with unit in deg, m or km
+ @param offset offset of the first result returned
+ @param limit number of results returned
+ */
+- (void)searchWithKeyword:(NSString *)keyword coordinate:(CLLocationCoordinate2D)location span:(NSString *)span offset:(NSInteger)offset andLimit:(NSInteger)limit;
+
+/**
  Suggest with Longdo map poi
  @param keyword word to suggest with Longdo
  */
 - (void)suggestWithKeyword:(NSString *)keyword;
+
+/**
+ Show event pins and data on Longdo map
+ */
+- (void)showEvents;
+
+/**
+ Show camera pins and data on Longdo map
+ */
+- (void)showCameras;
+
+/**
+ Remove event pins on Longdo map
+ */
+- (void)removeEvents;
+
+/**
+ Remove camera pins on Longdo map
+ */
+- (void)removeCameras;
 
 @end
