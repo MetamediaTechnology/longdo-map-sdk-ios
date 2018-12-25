@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LongdoMapSDK"
-  s.version      = "3.6"
+  s.version      = "3.6.1"
   s.summary      = "Integrated map tiles from Longdo Map to iOS application."
 
   # This description is used to generate tags and improve search results.
@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
                    DESC
 
   s.homepage     = "https://github.com/MetamediaTechnology/longdo-map-sdk-ios"
-  s.screenshots  = "https://camo.githubusercontent.com/69aa4c2b851560776c5b51da191514852edccc67/68747470733a2f2f7765626465762e6c6f6e67646f2e636f6d2f7e6b616d6f6e706f702f6769746875625f686f73742f73732e706e67"
+  s.screenshots  = "https://usermap.longdo.com/ipao/github_host/ss.png"
   s.documentation_url = "https://github.com/MetamediaTechnology/longdo-map-demo-ios/wiki"
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

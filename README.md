@@ -12,6 +12,9 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.6.1
+* fix tags, events, cameras annotation not show on map in iOS 8-11
+
 ### Version 3.6
 * add show event data method
 * add show camera data method
