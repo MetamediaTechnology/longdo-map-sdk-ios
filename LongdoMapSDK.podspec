@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LongdoMapSDK"
-  s.version      = "3.6.1"
+  s.version      = "3.6.2"
   s.summary      = "Integrated map tiles from Longdo Map to iOS application."
 
   # This description is used to generate tags and improve search results.
