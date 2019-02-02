@@ -12,6 +12,9 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.8
+* Support Longdo Box.
+
 ### Version 3.7
 * Has an option for user location's annotation in Longdo Map style.
 
