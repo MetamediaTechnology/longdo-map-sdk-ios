@@ -12,6 +12,12 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.9
+* HSL format in some camera.
+* `getVDOViewFromCameraData:` for get VDO view from camera annotation.
+* Add crosshair to show center point of the map.
+* Add copyright label when use Longdo layers.
+
 ### Version 3.8
 * Support Longdo Box.
 
