@@ -12,6 +12,11 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.9.1
+* Fix Longdo style of current location pin.
+* Remove automatic set crosshair to center of the map (can use `setCrosshair` by manual after frame changed instead).
+* Fix custom layer that use BBOX3857 may not appear on the map.
+
 ### Version 3.9
 * HSL format in some camera.
 * `getVDOViewFromCameraData:` for get VDO view from camera annotation.
