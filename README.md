@@ -12,6 +12,12 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.9.2
+* Fix tags not show in some area. (Please see [wiki](https://github.com/MetamediaTechnology/longdo-map-demo-ios/wiki/%5B3.x%5D-การแสดง-Longdo-Tags-บนแผนที่) for changed.)
+* Fix offline map not render.
+* Fix crashes when try to change language and the map has MKPolygon view.
+* Reduce the size of SDK.
+
 ### Version 3.9.1
 * Fix Longdo style of current location pin.
 * Remove automatic set crosshair to center of the map (can use `setCrosshair` by manual after frame changed instead).
