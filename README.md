@@ -12,6 +12,14 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.10
+* Can customize user location image for pin and arrow.
+* Add `addLMLayer` for add layer with alpha channel and showing only in specific zoom.
+* Add `removeSourceLayer` for remove custom layer.
+* Add `areaOfPolygon` for calulate area of `MKPolygon`.
+* Fix `setLanguage` for change language of the map immidiately.
+* Fix `removeLMOverlay` in case of cannot remove overlay for some condition.
+
 ### Version 3.9.2
 * Fix tags not show in some area. (Please see [wiki](https://github.com/MetamediaTechnology/longdo-map-demo-ios/wiki/%5B3.x%5D-การแสดง-Longdo-Tags-บนแผนที่) for changed.)
 * Fix offline map not render.
