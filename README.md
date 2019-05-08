@@ -12,6 +12,10 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.10.1
+* Fix `addLMLayers` when each layer has different alpha value.
+* Fix crash when dismiss map view while tag is rendering.
+
 ### Version 3.10
 * Can customize user location image for pin and arrow.
 * Add `addLMLayer` for add layer with alpha channel and showing only in specific zoom.
