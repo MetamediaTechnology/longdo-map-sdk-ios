@@ -12,7 +12,7 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
-### Version 3.10.2
+### Version 3.10.3
 * Fix search function for non ASCII keyword.
 * Revise `LMPinAnnotation` and `LMEventAnnotation` pin icon.
 * Add `complaint` event type.
