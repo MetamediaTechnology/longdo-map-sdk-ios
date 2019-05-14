@@ -12,6 +12,11 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.10.2
+* Fix search function for non ASCII keyword.
+* Revise `LMPinAnnotation` and `LMEventAnnotation` pin icon.
+* Add `complaint` event type.
+
 ### Version 3.10.1
 * Fix `addLMLayers` when each layer has different alpha value.
 * Fix crash when dismiss map view while tag is rendering.
