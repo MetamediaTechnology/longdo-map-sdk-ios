@@ -12,6 +12,14 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.11
+* Change `showEvents`, `removeEvents` function to `showsEvents` boolean property.
+* Change `showCameras`, `removeCameras` function to `showsCameras` boolean property.
+* Change `setZoomLevel:`, `getZoomLevel` function to `zoomLevel` float property.
+* Support interface builder inspector for some `LongdoMapView` class property.
+* When change map language, language of events in `LMEventAnnotation` will changed too.
+* Traffic layer and event pins will be updated automatically every 180 seconds.
+
 ### Version 3.10.3
 * Fix search function for non ASCII keyword.
 * Revise `LMPinAnnotation` and `LMEventAnnotation` pin icon.
