@@ -1,9 +1,9 @@
 # Longdo Map SDK for iOS
-This project contain the library to download for Longdo Map SDK for iOS.
+This project contains a library to download Longdo Map SDK for iOS.
 
-Download all the files and add to your project to start develop application with the SDK.
+Download all files and then add them into your project to start application development with our SDK.
 
-You can follow the tutorial on how to use Longdo Map SDK for iOS from the link on GitHub.
+For more information, you can follow our tutorial to learn how to use Longdo Map SDK for iOS as the link below.
 
 https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
@@ -13,123 +13,123 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 ## Change log
 
 ### Version 3.11
-* Change `showEvents`, `removeEvents` function to `showsEvents` boolean property.
-* Change `showCameras`, `removeCameras` function to `showsCameras` boolean property.
-* Change `setZoomLevel:`, `getZoomLevel` function to `zoomLevel` float property.
-* Support interface builder inspector for some `LongdoMapView` class property.
-* When change map language, language of events in `LMEventAnnotation` will changed too.
-* Traffic layer and event pins will be updated automatically every 180 seconds.
+* Convert function `showEvents` and `removeEvents` to boolean property `showsEvents`.
+* Convert function `showCameras` and `removeCameras` to boolean property `showsCameras`.
+* Convert function `setZoomLevel:` and `getZoomLevel` to float property `zoomLevel`.
+* Support inspector in interface builder for some class properties of `LongdoMapView`.
+* Allow event language in `LMEventAnnotation` to align with changed map language.
+* Add new feature to automatically update Traffic layer and event pins every 180 seconds.
 
 ### Version 3.10.3
-* Fix search function for non ASCII keyword.
-* Revise `LMPinAnnotation` and `LMEventAnnotation` pin icon.
-* Add `complaint` event type.
+* Fix search function for non-ASCII keyword.
+* Revise pin icon `LMPinAnnotation` and `LMEventAnnotation`.
+* Add event type `complaint`.
 
 ### Version 3.10.1
 * Fix `addLMLayers` when each layer has different alpha value.
-* Fix crash when dismiss map view while tag is rendering.
+* Fix crashing issue when dismiss map view while tag is rendering.
 
 ### Version 3.10
-* Can customize user location image for pin and arrow.
-* Add `addLMLayer` for add layer with alpha channel and showing only in specific zoom.
-* Add `removeSourceLayer` for remove custom layer.
-* Add `areaOfPolygon` for calulate area of `MKPolygon`.
-* Fix `setLanguage` for change language of the map immidiately.
-* Fix `removeLMOverlay` in case of cannot remove overlay for some condition.
+* Allow to customize image of user location for pin and arrow.
+* Add function `addLMLayer` for adding layer with alpha channel and defining visibility in specific zoom level.
+* Add function `removeSourceLayer` for removing custom layer.
+* Add function `areaOfPolygon` for calulating area of `MKPolygon`.
+* Fix function `setLanguage` for changing map language immediately.
+* Fix function `removeLMOverlay` that cannot remove overlay for some conditions.
 
 ### Version 3.9.2
-* Fix tags not show in some area. (Please see [wiki](https://github.com/MetamediaTechnology/longdo-map-demo-ios/wiki/%5B3.x%5D-การแสดง-Longdo-Tags-บนแผนที่) for changed.)
-* Fix offline map not render.
-* Fix crashes when try to change language and the map has MKPolygon view.
-* Reduce the size of SDK.
+* Fix tags that cannot display in some areas (please see [wiki](https://github.com/MetamediaTechnology/longdo-map-demo-ios/wiki/%5B3.x%5D-การแสดง-Longdo-Tags-บนแผนที่) for change).
+* Fix rendering offline map.
+* Fix crashing issue when try to change language and the map has MKPolygon view.
+* Reduce SDK size.
 
 ### Version 3.9.1
-* Fix Longdo style of current location pin.
-* Remove automatic set crosshair to center of the map (can use `updateCrosshair` by manual after frame changed instead).
-* Fix custom layer that use BBOX3857 may not appear on the map.
+* Fix Longdo style for current location pin.
+* Remove automatic relocation of crosshairs (however `updateCrosshair` can be relocated to center of map manually).
+* Fix custom layer that using BBOX3857 may not appear on the map.
 
 ### Version 3.9
-* HSL format in some camera.
-* `getVDOViewFromCameraData:` for get VDO view from camera annotation.
-* Add crosshair to show center point of the map.
+* Support cameras in format of HSL.
+* Add function `getVDOViewFromCameraData:` for retrieving VDO view from camera annotation.
+* Add crosshairs to show center point of the map.
 * Add copyright label when use Longdo layers.
 
 ### Version 3.8
 * Support Longdo Box.
 
 ### Version 3.7
-* Has an option for user location's annotation in Longdo Map style.
+* Add new option for user location's annotation in Longdo Map style.
 
 ### Version 3.6.2
 * Prevent cache files from being backed up to iCloud/iTunes.
 
 ### Version 3.6.1
-* Fix tags, events, cameras annotation not show on 1x, 2x scale devices.
+* Fix tags, events, and cameras annotation that cannot show on 1x- and 2x-scale devices.
 
 ### Version 3.6
-* Add show event data method.
-* Add show camera data method.
-* Fix search function for non ASCII keyword.
-* Add parameter span, offset, limit for search function.
+* Add new method to show event data.
+* Add new method to show camera data.
+* Fix search function for non-ASCII keyword.
+* Add parameters i.e. span, offset, limit for search function.
 
 ### Version 3.5
-* Fix use custom bounding box tiles in map.
+* Fix an issue related to custom bounding box tiles on map.
 
 ### Version 3.4
-* Add function covert from LatLon to UTM.
-* Can show multiple layers.
+* Add new function for coverting LatLon to UTM.
+* Add new feature to show multiple layers.
 
 ### Version 3.3.1
-* Fix offline map in zoom more than 12.
+* Fix offline map in case of zoom level more than 12.
 
 ### Version 3.3
-* Can get data from url with parameters from current map tile number and map zoom.
+* Allow to retrieve data from URL with current map tile number and zoom level as parameters.
 
 ### Version 3.2.1
-* Can use custom layer with TMS format.
+* Allow to use custom layer with TMS format.
 
 ### Version 3.2
-* Can use custom layer with bounding box parameter.
+* Allow to use custom layer with bounding box parameter.
 
 ### Version 3.1
 * Add upside down layer for normal layer.
-* Offline layer support. (contact sales@mm.co.th for resource files.)
+* Support offline layer (please contact sales@mm.co.th for resource files).
 
 ### Version 3.0.2
 * Add blank layer.
 
 ### Version 3.0.1
-* Premium apikey can use more than 5GB of data.
+* Enable premium API key to use data more than 5 GB.
 * Fix cache for map tile images.
 
 ### Version 3.0
-* Refractor to shorter name.
-* Include coordinate parameter to search method.
+* Apply code refactoring for shorter name.
+* Modify search method to include coordinate parameter.
 
 ### Version 3.0 beta 2
-* Developer can add their custom layer from url.
-* Fix support for 32 bit device.
+* Allow programmatically to add their custom layer via URL.
+* Support 32-bit device.
 
 ### Version 3.0 beta 1
 * Support Swift 3.
-* Search and suggest feature from Longdo Map.
-* Based on Apple Mapkit framework.
-* Drop support from iOS 7 and earlier.
+* Add search and suggest feature from Longdo Map.
+* Revise development based on Apple Mapkit framework.
+* Discontinue to support iOS 7 and earlier.
 
 ### Version 2.1
-* Full support iOS9 / All data send from ssl.
+* Fully support iOS 9 therefore all data is required to send via SSL.
 
 ### Version 2.0.1
-* Tiles will resume download after go online immediately.
+* Enable to immediately resume downloading map tiles after network is available.
 
 ### Version 2.0.0
-* First public release
+* Officially launch.
 
 ### Version 1.0.0
-* Close beta release
+* Release close-beta version.
 
 ### Version 0.0.0
-* Experimental release
+* Release experimental version.
 
 ## Copyright and license
   * Metamedia Technology © 2005 - now. All Rights Reserved.
