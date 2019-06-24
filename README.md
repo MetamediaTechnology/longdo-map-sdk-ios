@@ -12,6 +12,13 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.11.1
+* Improve a logic to check API key when swap online and offline mode.
+* Switch event pin language to Thai if English is not available.
+* Fix crashing issue when use invalid tile URL.
+* Fix an issue that `zoomLevel` may return wrong value.
+* Fix an issue related to traffic layer that it may be removed unexpectedly after remove multiple overlays.
+
 ### Version 3.11
 * Convert function `showEvents` and `removeEvents` to boolean property `showsEvents`.
 * Convert function `showCameras` and `removeCameras` to boolean property `showsCameras`.
