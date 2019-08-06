@@ -12,6 +12,17 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.12
+* Add routing function.
+* Revise functions related to search and suggestion.
+* Allow to customize an image, alpha value, and visible range of specified tag.
+* Fix an issue related to no-key-required layers which cannot show normally.
+* Fix an issue that tags may not show on map when call API from Longdo Box.
+* Fix tag appearance when change zoom level or map layer.
+* Fix to clear event/camera annotations when hide event/camera.
+* Fix an issue that map tile does not stop blinking on the map.
+* Fix an issue that overlaid geometry cannot display properly when add new layer after geometry.
+
 ### Version 3.11.1
 * Improve a logic to check API key when swap online and offline mode.
 * Switch event pin language to Thai if English is not available.
