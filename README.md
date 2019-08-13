@@ -20,7 +20,7 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 * Fix an issue that tags may not show on map when call API from Longdo Box.
 * Fix tag appearance when change zoom level or map layer.
 * Fix to clear event/camera annotations when hide event/camera.
-* Fix an issue that map tile does not stop blinking on the map.
+* ~Fix an issue that map tile does not stop blinking on the map.~
 * Fix an issue that overlaid geometry cannot display properly when add new layer after geometry.
 
 ### Version 3.11.1
