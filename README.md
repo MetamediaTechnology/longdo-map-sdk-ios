@@ -12,6 +12,15 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.12.2
+* Support Mac Catalyst. (Manually import xcframework.)
+* Update deprecated `UIWebview` to `WKWebView`.
+* Fix an issue when user changes map's zoom to level 20 or more.
+* Revise event pin appearance for each zoom level.
+
+### Version 3.12.1
+* Remove "User Interface Style" property in Info.plist.
+
 ### Version 3.12
 * Add routing function.
 * Revise functions related to search and suggestion.
