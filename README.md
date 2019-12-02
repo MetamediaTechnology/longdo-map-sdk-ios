@@ -12,6 +12,9 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.12.3
+* Improve performance when load map tile images from server.
+
 ### Version 3.12.2
 * Support Mac Catalyst. (Manually import xcframework.)
 * Update deprecated `UIWebview` to `WKWebView`.
