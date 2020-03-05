@@ -12,6 +12,10 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.12.4
+* Improve performance when load map tile images from server.
+* Fix custom layer that using custom image format.
+
 ### Version 3.12.3
 * Improve performance when load map tile images from server.
 
