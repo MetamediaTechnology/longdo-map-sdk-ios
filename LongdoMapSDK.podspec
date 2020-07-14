@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "LongdoMapSDK"
-  s.version      = "3.12.4"
+  s.version      = "3.13"
   s.summary      = "Integrated map tiles from Longdo Map to iOS application."
   s.description  = <<-DESC
  The SDK use map resources from Longdo.COM services yet allow developers to use other map tile standards such as TMS, WMS, and WMTS. The SDK provides most must have features allow developers to show markers on the map with a few lines. It also includes exclusive services such as POI tags but traffic events and traffic camera that aren't available on other map SDK.
@@ -13,6 +13,6 @@ Pod::Spec.new do |s|
   s.social_media_url   = "https://www.facebook.com/longdocom"
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/MetamediaTechnology/longdo-map-sdk-ios.git", :tag => "#{s.version}" }
-  s.ios.vendored_frameworks = "LongdoMapSDK.framework"
+  s.ios.vendored_frameworks = "LongdoMapSDK.xcframework"
 
 end
