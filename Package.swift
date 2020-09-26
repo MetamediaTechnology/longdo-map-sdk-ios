@@ -7,10 +7,10 @@ let package = Package(
         .macOS(.v10_15), .iOS(.v10)
     ],
     products: [
-        .library(name: "LongdoMapSDK", targets: ["LongdoMapSDKBinaryPackage"])
+        .library(name: "LongdoMapSDK", targets: ["LongdoMapSDK", "LongdoMapSDKBinaryPackage"])
     ],
     targets: [
-        binaryTarget(
+        .binaryTarget(
             name: "LongdoMapSDKBinaryPackage",
             path: "LongdoMapSDK.xcframework"
         )
