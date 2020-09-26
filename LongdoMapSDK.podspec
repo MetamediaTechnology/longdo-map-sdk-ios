@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.social_media_url   = "https://www.facebook.com/longdocom"
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/MetamediaTechnology/longdo-map-sdk-ios.git", :tag => "#{s.version}" }
-  s.ios.vendored_frameworks = "LongdoMapSDK.xcframework"
-  s.exclude_files = [ 'LongdoMapSDK.xcframework.zip' ]
+  s.vendored_frameworks = "LongdoMapSDK.xcframework"
+  
 
 end
