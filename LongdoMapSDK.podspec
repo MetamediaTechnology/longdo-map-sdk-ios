@@ -11,7 +11,8 @@ Pod::Spec.new do |s|
   s.license      = { :type => "Commercial", :file => "LICENSE.md" }
   s.author             = { "Metamedia Technology" => "staff-map@mm.co.th" }
   s.social_media_url   = "https://www.facebook.com/longdocom"
-  s.platform     = :ios, "9.0"
+  s.platform     = :ios
+  s.ios.deployment_target = '10.0'
   s.source       = { :git => "https://github.com/MetamediaTechnology/longdo-map-sdk-ios.git", :tag => "#{s.version}" }
   s.vendored_frameworks = "LongdoMapSDK.xcframework"
   
