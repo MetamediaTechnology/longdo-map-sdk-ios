@@ -12,6 +12,9 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.15
+* Improve performance when load map tile images from server.
+
 ### Version 3.14
 * Add rain layer.
 * Use xcframework. (Please use Xcode 11 or above.)
