@@ -12,6 +12,9 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.16
+* Add new method to show air quality index.
+
 ### Version 3.15
 * Improve performance when load map tile images from server.
 
@@ -30,7 +33,7 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 * Improve performance when load map tile images from server.
 
 ### Version 3.12.2
-* Support Mac Catalyst. (Manually import xcframework.)
+* Support Mac Catalyst.
 * Update deprecated `UIWebview` to `WKWebView`.
 * Fix an issue when user changes map's zoom to level 20 or more.
 * Revise event pin appearance for each zoom level.
