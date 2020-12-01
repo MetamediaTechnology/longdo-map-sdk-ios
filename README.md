@@ -12,6 +12,9 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.16.1
+* Add event type `diversion` and `roadclosed`.
+
 ### Version 3.16
 * Add new method to show air quality index.
 
