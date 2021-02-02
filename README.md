@@ -12,6 +12,10 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.17
+* Fix an issue that tags may not show on map after change map layer.
+* Fix an issue that `zoomLevel` may return wrong value.
+
 ### Version 3.16.1
 * Add event type `diversion` and `roadclosed`.
 
