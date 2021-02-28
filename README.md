@@ -12,6 +12,11 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.18
+* Reduce resources loaded.
+* Fix an issue that traffic layer and AQI layer not updated.
+* Add nullability annotations.
+
 ### Version 3.17
 * Fix an issue that tags may not show on map after change map layer.
 * Fix an issue that `zoomLevel` may return wrong value.
