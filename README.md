@@ -12,6 +12,10 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.19
+* Add Air4Thai data.
+* Add land parcel layer.
+
 ### Version 3.18
 * Reduce resources loaded.
 * Fix an issue that traffic layer and AQI layer not updated.
