@@ -12,6 +12,9 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.22
+* Support for iOS 16.
+
 ### Version 3.21
 * Fix an issue that some API keys cannot be used in SDK.
 
