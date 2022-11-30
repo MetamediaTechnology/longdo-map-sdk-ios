@@ -107,6 +107,8 @@ typedef NS_ENUM(NSInteger, LMMode) {
     THAICHOTE,
     ///Thaichote satellite base layer.
     THAICHOTE_HTTP,
+    ///Thaichote satellite base layer.
+    THAICHOTE_SIMPLE,
     ///Land parcel layer.
     DOL_GRAY,
     ///Standard+POI non-base layer.

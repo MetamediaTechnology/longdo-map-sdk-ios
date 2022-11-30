@@ -12,6 +12,9 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.22.2
+* Fix support for Mac Catalyst.
+
 ### Version 3.22.1
 * Support for iOS 16.
 
