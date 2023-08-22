@@ -12,6 +12,9 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.23
+* Fix rain radar layer.
+
 ### Version 3.22.2
 * Fix support for Mac Catalyst.
 
