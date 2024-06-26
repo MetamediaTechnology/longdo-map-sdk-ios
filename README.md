@@ -12,6 +12,9 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.25
+* Fix custom layer.
+
 ### Version 3.24
 * Fix AQI layer.
 * Update minimum iOS version to 12.
