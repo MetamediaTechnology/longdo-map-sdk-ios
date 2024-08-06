@@ -12,6 +12,9 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
 ## Change log
 
+### Version 3.26
+* Fix an issue that the map shows the wrong layer type in offline mode.
+
 ### Version 3.25
 * Fix custom layer.
 
