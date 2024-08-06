@@ -10,6 +10,9 @@ https://github.com/MetamediaTechnology/longdo-map-demo-ios
 ## Demo and Tutorial
 https://github.com/MetamediaTechnology/longdo-map-demo-ios
 
+## For Vector Version
+https://github.com/MetamediaTechnology/longdo-map-ios-framework
+
 ## Change log
 
 ### Version 3.26
