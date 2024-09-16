@@ -15,6 +15,9 @@ https://github.com/MetamediaTechnology/longdo-map-ios-framework
 
 ## Change log
 
+### Version 3.27
+* Minor fixes.
+
 ### Version 3.26
 * Fix an issue that the map shows the wrong layer type in offline mode.
 
