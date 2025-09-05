@@ -89,6 +89,14 @@ typedef NS_ENUM(NSInteger, LMMode) {
     NORMAL,
     ///Revert standard base layer.
     NORMALR,
+    ///Light theme base layer.
+    LIGHT,
+    ///Revert light theme base layer.
+    LIGHTR,
+    ///Dark theme base layer.
+    DARK,
+    ///Revert dark theme base layer.
+    DARKR,
     ///Open Cycle base layer.
     OPENCYCLE,
     ///Open Street Map base layer.

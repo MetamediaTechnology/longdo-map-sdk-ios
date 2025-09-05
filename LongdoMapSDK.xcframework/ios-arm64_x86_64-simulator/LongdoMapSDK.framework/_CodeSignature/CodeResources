@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		SkgLtqvUO7frHyaU1pKw43fLnsw=
+		lUrJNOr87AoBpvoBBP0Cjwnh4fo=
 		</data>
 		<key>Headers/Annotation.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/MKMapView+Longdo.h</key>
 		<data>
-		dgT4orJGg49K/QpOjy787Qq9BbY=
+		FCJN5mPf5X+zAN3FbQvOmDXIVd0=
 		</data>
 		<key>Headers/ServicesModel.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		699eGu1ViIBYnfO/dzk0470EbEA=
+		dED6syU/RnxP/G8g1V6i69h1N4g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -43,7 +43,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GlLg1nxmntmcE3wvK6h3AVheSBS0dewQNZACI/IBvXg=
+			jqugoJFVpGqv3YAiE6WNrVz86CxemXtYqC+RIsp4N7Q=
 			</data>
 		</dict>
 		<key>Headers/Annotation.h</key>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			f8OV86AAlx+9HJ/SIgchZZsjHe9Qj71oQPIula6XBjQ=
+			uGGXESngN72Nrgm5L0+K6eE+6D16S4rlB9kyxq2wHsE=
 			</data>
 		</dict>
 		<key>Headers/ServicesModel.h</key>

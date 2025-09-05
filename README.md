@@ -15,6 +15,9 @@ https://github.com/MetamediaTechnology/longdo-map-ios-framework
 
 ## Change log
 
+### Version 3.28
+* Add light and dark theme layer.
+
 ### Version 3.27
 * Minor fixes.
 
