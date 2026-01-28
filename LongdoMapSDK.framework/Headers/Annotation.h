@@ -76,6 +76,7 @@ typedef NS_ENUM(NSInteger, LMAQISource) {
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSString *poiid;
 @property (nonatomic, strong) NSString *type;
+@property (nonatomic, strong) NSString *category;
 @property (nonatomic, assign) NSInteger minZoom;
 @property (nonatomic, strong) LMIcon *customIcon;
 @property (nonatomic, assign) CLLocationCoordinate2D coordinate;

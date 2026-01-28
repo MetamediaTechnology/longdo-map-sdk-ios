@@ -15,6 +15,9 @@ https://github.com/MetamediaTechnology/longdo-map-ios-framework
 
 ## Change log
 
+### Version 3.30
+* Add `category` property for `LMTagAnnotation`.
+
 ### Version 3.29
 * Improve performance.
 

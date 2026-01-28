@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		lUrJNOr87AoBpvoBBP0Cjwnh4fo=
+		QuTuMkD91RX7KVwOCYpuPNGaQFo=
 		</data>
 		<key>Headers/Annotation.h</key>
 		<data>
-		60sG7FNbKeR056p5WIKcSGWZ1FQ=
+		sgzNFjDpRC0pAYzhJZ0lbwcnNrE=
 		</data>
 		<key>Headers/LocationController.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		gGe5uEF8lZtSu5dTEYYpHWmiuqk=
+		jCtBpTp4TLSqQQBhnAQjo9Uu2WA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -43,14 +43,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jqugoJFVpGqv3YAiE6WNrVz86CxemXtYqC+RIsp4N7Q=
+			/IeQ/werJojAVHfZc+xNnSfo6ySnp99Xo8NZU8O1ijM=
 			</data>
 		</dict>
 		<key>Headers/Annotation.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ztr1ETXtTIKm3d8pVaVIwPWhx4e+kJ0qmz3GdXamFjc=
+			3R188cURBgtTcfYPD0rjC82ELIWKrlkfi88aVWvp3/I=
 			</data>
 		</dict>
 		<key>Headers/LocationController.h</key>
