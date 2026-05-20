@@ -15,6 +15,9 @@ https://github.com/MetamediaTechnology/longdo-map-ios-framework
 
 ## Change log
 
+### Version 3.32
+* Fix rain radar layer.
+
 ### Version 3.31
 * Add event type `earthquake`.
 
