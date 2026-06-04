@@ -15,6 +15,9 @@ https://github.com/MetamediaTechnology/longdo-map-ios-framework
 
 ## Change log
 
+### Version 3.33
+* Fix the data refresh issue for rain radar layer.
+
 ### Version 3.32
 * Fix rain radar layer.
 
